@@ -1,10 +1,4 @@
-﻿//------------------------------------------------------------------------------
-// <copyright file="HotTabs.cs" company="Justin Clareburt">
-//     Copyright (c) Company.  All rights reserved.
-// </copyright>
-//------------------------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.ComponentModel.Design;
 using System.Linq;
 using Microsoft.VisualStudio.PlatformUI.Shell;
@@ -16,7 +10,7 @@ namespace HotTabs
     /// <summary>
     /// Command handler
     /// </summary>
-    internal sealed class HotTabs
+    internal sealed class HotTabsCommandHandler
     {
         /// <summary>
         /// Command ID.
@@ -36,7 +30,7 @@ namespace HotTabs
         /// <summary>
         /// Gets the instance of the command.
         /// </summary>
-        public static HotTabs Instance
+        public static HotTabsCommandHandler Instance
         {
             get;
             private set;
@@ -59,15 +53,15 @@ namespace HotTabs
         /// <param name="package">Owner package, not null.</param>
         public static void Initialize(Package package)
         {
-            Instance = new HotTabs(package);
+            Instance = new HotTabsCommandHandler(package);
         }
         
         /// <summary>
-                 /// Initializes a new instance of the <see cref="HotTabs"/> class.
+                 /// Initializes a new instance of the <see cref="HotTabsCommandHandler"/> class.
                  /// Adds our command handlers for menu (commands must exist in the command table file)
                  /// </summary>
                  /// <param name="package">Owner package, not null.</param>
-        private HotTabs(Package package)
+        private HotTabsCommandHandler(Package package)
         {
             if (package == null)
             {
@@ -120,12 +114,6 @@ namespace HotTabs
 
             switch ((uint)command.CommandID.ID)
             {
-                case PkgCmdIDList.cmdidToolsOptions:
-                    // This one should always be enabled.
-                    command.Visible = true;
-                    command.Enabled = true;
-                    break;
-
                 case PkgCmdIDList.cmdidGoToPinnedTab1:
                 case PkgCmdIDList.cmdidGoToPinnedTab2:
                 case PkgCmdIDList.cmdidGoToPinnedTab3:
@@ -199,10 +187,6 @@ namespace HotTabs
 
             switch (command.CommandID.ID)
             {
-                //case PkgCmdIDList.cmdidToolsOptions:
-                //    ShowMruPropertyPage();
-                //    break;
-
                 case PkgCmdIDList.cmdidGoToPinnedTab1:
                 case PkgCmdIDList.cmdidGoToPinnedTab2:
                 case PkgCmdIDList.cmdidGoToPinnedTab3:
@@ -289,35 +273,4 @@ namespace HotTabs
             return viewGroup.VisibleChildren.OfType<View>().Where(predicate).Skip(index).FirstOrDefault();
         }
     }
-
-    static class PkgCmdIDList
-    {
-        public const int DocWellContextMenu = 0x100;
-        public const int DocWellContextGroup = 0x101;
-        public const int DocWellGeneralCommandsGroup = 0x102;
-
-        public const int cmdidToolsOptions = 0x104;
-
-        public const int cmdidGoToPinnedTab1 = 0x108;
-        public const int cmdidGoToPinnedTab2 = 0x109;
-        public const int cmdidGoToPinnedTab3 = 0x10a;
-        public const int cmdidGoToPinnedTab4 = 0x10b;
-        public const int cmdidGoToPinnedTab5 = 0x10c;
-        public const int cmdidGoToPinnedTab6 = 0x10d;
-        public const int cmdidGoToPinnedTab7 = 0x10e;
-        public const int cmdidGoToPinnedTab8 = 0x10f;
-        public const int cmdidGoToPinnedTab9 = 0x110;
-        public const int cmdidGoToPinnedTab10 = 0x111;
-
-        public const int cmdidGoToUnpinnedTab1 = 0x112;
-        public const int cmdidGoToUnpinnedTab2 = 0x113;
-        public const int cmdidGoToUnpinnedTab3 = 0x114;
-        public const int cmdidGoToUnpinnedTab4 = 0x115;
-        public const int cmdidGoToUnpinnedTab5 = 0x116;
-        public const int cmdidGoToUnpinnedTab6 = 0x117;
-        public const int cmdidGoToUnpinnedTab7 = 0x118;
-        public const int cmdidGoToUnpinnedTab8 = 0x119;
-        public const int cmdidGoToUnpinnedTab9 = 0x11a;
-        public const int cmdidGoToUnpinnedTab10 = 0x11b;
-    };
 }

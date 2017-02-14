@@ -58,8 +58,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="HotTabs.cs" />
+    <Compile Include="HotTabsCommandHandler.cs" />
     <Compile Include="HotTabsPackage.cs" />
+    <Compile Include="PkgCmdIDList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

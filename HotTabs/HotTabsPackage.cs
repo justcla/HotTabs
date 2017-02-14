@@ -1,13 +1,8 @@
-﻿//------------------------------------------------------------------------------
-// <copyright file="HotTabsPackage.cs" company="Justin Clareburt">
-//     Copyright (c) Company.  All rights reserved.
-// </copyright>
-//------------------------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 
 namespace HotTabs
 {
@@ -31,6 +26,7 @@ namespace HotTabs
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About
     [ProvideMenuResource("Menus.ctmenu", 1)]
+    [ProvideAutoLoad(UIContextGuids.SolutionExists)]
     [Guid(HotTabsPackage.PackageGuidString)]
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
     public sealed class HotTabsPackage : Package
@@ -41,7 +37,7 @@ namespace HotTabs
         public const string PackageGuidString = "998371b5-6a8e-4eed-9d15-f7c0addcdd6e";
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="HotTabs"/> class.
+        /// Initializes a new instance of the <see cref="HotTabsCommandHandler"/> class.
         /// </summary>
         public HotTabsPackage()
         {
@@ -59,7 +55,7 @@ namespace HotTabs
         /// </summary>
         protected override void Initialize()
         {
-            HotTabs.Initialize(this);
+            HotTabsCommandHandler.Initialize(this);
             base.Initialize();
         }
 
