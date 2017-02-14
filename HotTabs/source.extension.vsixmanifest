@@ -4,6 +4,8 @@
     <Identity Id="HotTabs.55baf0b8-e5a0-41cf-bdd8-8709c8ee8088" Version="1.0" Language="en-US" Publisher="Justin Clareburt" />
     <DisplayName>HotTabs</DisplayName>
     <Description>Provides features for working with document tabs in the IDE</Description>
+    <Icon>Resources\HotTabsPackage.ico</Icon>
+    <PreviewImage>Resources\HotTabsPreview.png</PreviewImage>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,)" />
