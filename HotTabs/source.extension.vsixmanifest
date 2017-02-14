@@ -4,7 +4,7 @@
     <Identity Id="HotTabs.55baf0b8-e5a0-41cf-bdd8-8709c8ee8088" Version="1.0" Language="en-US" Publisher="Justin Clareburt" />
     <DisplayName>Hot Tabs</DisplayName>
     <Description xml:space="preserve">Provides features for working with document tabs in the IDE. Includes shortcuts for jumping directly to tabs by number.</Description>
-    <Icon>Resources\HotTabsPackage.ico</Icon>
+    <Icon>Resources\HotTabs_90x.png</Icon>
     <PreviewImage>Resources\HotTabsPreview.png</PreviewImage>
   </Metadata>
   <Installation>
