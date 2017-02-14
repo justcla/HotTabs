@@ -2,8 +2,8 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="HotTabs.55baf0b8-e5a0-41cf-bdd8-8709c8ee8088" Version="1.0" Language="en-US" Publisher="Justin Clareburt" />
-    <DisplayName>HotTabs</DisplayName>
-    <Description>Provides features for working with document tabs in the IDE</Description>
+    <DisplayName>Hot Tabs</DisplayName>
+    <Description xml:space="preserve">Provides features for working with document tabs in the IDE. Includes shortcuts for jumping directly to tabs by number.</Description>
     <Icon>Resources\HotTabsPackage.ico</Icon>
     <PreviewImage>Resources\HotTabsPreview.png</PreviewImage>
   </Metadata>
