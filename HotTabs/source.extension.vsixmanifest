@@ -3,10 +3,10 @@
   <Metadata>
     <Identity Id="HotTabs.55baf0b8-e5a0-41cf-bdd8-8709c8ee8088" Version="1.0" Language="en-US" Publisher="Justin Clareburt" />
     <DisplayName>HotTabs</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Description>Provides features for working with document tabs in the IDE</Description>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0,)" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
@@ -15,4 +15,7 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
   </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
 </PackageManifest>
