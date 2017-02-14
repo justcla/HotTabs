@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--  This is the file that defines the actual layout and type of the commands.
+        It is divided in different sections (e.g. command definition, command
+        placement, ...), with each defining a specific set of properties.
+        See the comment before each section for more details about how to
+        use it. -->
+
+  <!--  The VSCT compiler (the tool that translates this file into the binary
+        format that VisualStudio will consume) has the ability to run a preprocessor
+        on the vsct file; this preprocessor is (usually) the C++ preprocessor, so
+        it is possible to define includes and macros with the same syntax used
+        in C++ files. Using this ability of the compiler here, we include some files
+        defining some of the constants that we will use inside the file. -->
+
+  <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h"/>
+
+  <!--This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h"/>
+
+  <!--The Commands section is where commands, menus, and menu groups are defined.
+      This section uses a Guid to identify the package that provides the command defined inside it. -->
+  <Commands package="guidHotTabsPackage">
+    <!-- Inside this section we have different sub-sections: one for the menus, another
+    for the menu groups, one for the buttons (the actual commands), one for the combos
+    and the last one for the bitmaps used. Each element is identified by a command id that
+    is a unique pair of guid and numeric identifier; the guid part of the identifier is usually
+    called "command set" and is used to group different command inside a logically related
+    group; your package should define its own command set in order to avoid collisions
+    with command ids defined by other packages. -->
+
+    <!-- In this section you can define new menu groups. A menu group is a container for
+         other menus or buttons (commands); from a visual point of view you can see the
+         group as the part of a menu contained between two lines. The parent of a group
+         must be a menu. -->
+    <Groups>
+      <Group guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" priority="0x0600">
+        <!--<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>-->
+        <Parent guid="guidSHLMainMenu" id="0"/>
+      </Group>
+    </Groups>
+
+    <!--Buttons section. -->
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <!--To define a menu group you have to specify its ID, the parent menu and its display priority.
+          The command is visible and enabled by default. If you need to change the visibility, status, etc, you can use
+          the CommandFlag node.
+          You can add more than one CommandFlag node e.g.:
+              <CommandFlag>DefaultInvisible</CommandFlag>
+              <CommandFlag>DynamicVisibility</CommandFlag>
+          If you do not want an image next to your command, remove the Icon node /> -->
+      <Button guid="guidHotTabsPackageCmdSet" id="HotTabsId" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <Strings>
+          <ButtonText>Invoke HotTabs</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab1" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 1</ButtonText>
+          <ToolTipText>Activates pinned tab 1.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab1</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab1</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab2" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 2</ButtonText>
+          <ToolTipText>Activates pinned tab 2.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab2</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab2</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab3" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 3</ButtonText>
+          <ToolTipText>Activates pinned tab 3.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab3</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab3</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab4" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 4</ButtonText>
+          <ToolTipText>Activates pinned tab 4.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab4</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab4</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab5" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 5</ButtonText>
+          <ToolTipText>Activates pinned tab 5.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab5</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab5</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab6" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 6</ButtonText>
+          <ToolTipText>Activates pinned tab 6.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab6</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab6</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab7" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 7</ButtonText>
+          <ToolTipText>Activates pinned tab 7.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab7</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab7</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab8" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 8</ButtonText>
+          <ToolTipText>Activates pinned tab 8.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab8</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab8</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab9" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 9</ButtonText>
+          <ToolTipText>Activates pinned tab 9.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab9</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab9</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab10" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Pinned Tab 10</ButtonText>
+          <ToolTipText>Activates pinned tab 10.</ToolTipText>
+          <CanonicalName>Window.GoToPinnedTab10</CanonicalName>
+          <LocCanonicalName>Window.GoToPinnedTab10</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab1" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 1</ButtonText>
+          <ToolTipText>Activates unpinned tab 1.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab1</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab1</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab2" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 2</ButtonText>
+          <ToolTipText>Activates unpinned tab 2.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab2</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab2</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab3" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 3</ButtonText>
+          <ToolTipText>Activates unpinned tab 3.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab3</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab3</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab4" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 4</ButtonText>
+          <ToolTipText>Activates unpinned tab 4.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab4</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab4</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab5" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 5</ButtonText>
+          <ToolTipText>Activates unpinned tab 5.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab5</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab5</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab6" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 6</ButtonText>
+          <ToolTipText>Activates unpinned tab 6.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab6</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab6</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab7" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 7</ButtonText>
+          <ToolTipText>Activates unpinned tab 7.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab7</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab7</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab8" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 8</ButtonText>
+          <ToolTipText>Activates unpinned tab 8.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab8</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab8</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab9" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 9</ButtonText>
+          <ToolTipText>Activates unpinned tab 9.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab9</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab9</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab10" priority="0x0100" type="Button">
+        <Parent guid="guidHotTabsPackageCmdSet" id="HotTabsCommandGroup" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>CommandWellOnly</CommandFlag>
+        <Strings>
+          <ButtonText>Go to Unpinned Tab 10</ButtonText>
+          <ToolTipText>Activates unpinned tab 10.</ToolTipText>
+          <CanonicalName>Window.GoToUnpinnedTab10</CanonicalName>
+          <LocCanonicalName>Window.GoToUnpinnedTab10</LocCanonicalName>
+        </Strings>
+      </Button>
+
+    </Buttons>
+
+  </Commands>
+
+  <KeyBindings>
+    <!-- Go to Pinned tab -->
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab1"    editor="guidVSStd97" key1="VK_NUMPAD1" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab2"    editor="guidVSStd97" key1="VK_NUMPAD2" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab3"    editor="guidVSStd97" key1="VK_NUMPAD3" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab4"    editor="guidVSStd97" key1="VK_NUMPAD4" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab5"    editor="guidVSStd97" key1="VK_NUMPAD5" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab6"    editor="guidVSStd97" key1="VK_NUMPAD6" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab7"    editor="guidVSStd97" key1="VK_NUMPAD7" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab8"    editor="guidVSStd97" key1="VK_NUMPAD8" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab9"    editor="guidVSStd97" key1="VK_NUMPAD9" mod1="Control" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToPinnedTab10"   editor="guidVSStd97" key1="VK_NUMPAD0" mod1="Control" />
+
+    <!-- Go to Unpinned tab -->
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab1"  editor="guidVSStd97" key1="VK_NUMPAD1" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab2"  editor="guidVSStd97" key1="VK_NUMPAD2" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab3"  editor="guidVSStd97" key1="VK_NUMPAD3" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab4"  editor="guidVSStd97" key1="VK_NUMPAD4" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab5"  editor="guidVSStd97" key1="VK_NUMPAD5" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab6"  editor="guidVSStd97" key1="VK_NUMPAD6" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab7"  editor="guidVSStd97" key1="VK_NUMPAD7" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab8"  editor="guidVSStd97" key1="VK_NUMPAD8" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab9"  editor="guidVSStd97" key1="VK_NUMPAD9" mod1="Control Alt" />
+    <KeyBinding guid="guidHotTabsPackageCmdSet" id="cmdidGoToUnpinnedTab10" editor="guidVSStd97" key1="VK_NUMPAD0" mod1="Control Alt" />
+  </KeyBindings>
+
+  <Symbols>
+    <!-- This is the package guid. -->
+    <GuidSymbol name="guidHotTabsPackage" value="{998371b5-6a8e-4eed-9d15-f7c0addcdd6e}" />
+
+    <!-- This is the guid used to group the menu commands together -->
+    <GuidSymbol name="guidHotTabsPackageCmdSet" value="{3b6bccd3-4c5a-4bcb-8ae4-8bf54dc3d642}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="HotTabsId" value="0x0100" />
+
+      <IDSymbol name="HotTabsCommandGroup" value="0x102" />
+
+      <IDSymbol name="cmdidGoToPinnedTab1"         value="0x108" />
+      <IDSymbol name="cmdidGoToPinnedTab2"         value="0x109" />
+      <IDSymbol name="cmdidGoToPinnedTab3"         value="0x10a" />
+      <IDSymbol name="cmdidGoToPinnedTab4"         value="0x10b" />
+      <IDSymbol name="cmdidGoToPinnedTab5"         value="0x10c" />
+      <IDSymbol name="cmdidGoToPinnedTab6"         value="0x10d" />
+      <IDSymbol name="cmdidGoToPinnedTab7"         value="0x10e" />
+      <IDSymbol name="cmdidGoToPinnedTab8"         value="0x10f" />
+      <IDSymbol name="cmdidGoToPinnedTab9"         value="0x110" />
+      <IDSymbol name="cmdidGoToPinnedTab10"        value="0x111" />
+
+      <IDSymbol name="cmdidGoToUnpinnedTab1"       value="0x112" />
+      <IDSymbol name="cmdidGoToUnpinnedTab2"       value="0x113" />
+      <IDSymbol name="cmdidGoToUnpinnedTab3"       value="0x114" />
+      <IDSymbol name="cmdidGoToUnpinnedTab4"       value="0x115" />
+      <IDSymbol name="cmdidGoToUnpinnedTab5"       value="0x116" />
+      <IDSymbol name="cmdidGoToUnpinnedTab6"       value="0x117" />
+      <IDSymbol name="cmdidGoToUnpinnedTab7"       value="0x118" />
+      <IDSymbol name="cmdidGoToUnpinnedTab8"       value="0x119" />
+      <IDSymbol name="cmdidGoToUnpinnedTab9"       value="0x11a" />
+      <IDSymbol name="cmdidGoToUnpinnedTab10"      value="0x11b" />
+    </GuidSymbol>
+
+  </Symbols>
+</CommandTable>
