@@ -62,8 +62,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 1</ButtonText>
           <ToolTipText>Activates pinned tab 1.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab1</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab1</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab1</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab1</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -75,8 +75,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 2</ButtonText>
           <ToolTipText>Activates pinned tab 2.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab2</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab2</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab2</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab2</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -88,8 +88,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 3</ButtonText>
           <ToolTipText>Activates pinned tab 3.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab3</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab3</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab3</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab3</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -101,8 +101,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 4</ButtonText>
           <ToolTipText>Activates pinned tab 4.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab4</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab4</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab4</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab4</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -114,8 +114,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 5</ButtonText>
           <ToolTipText>Activates pinned tab 5.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab5</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab5</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab5</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab5</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -127,8 +127,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 6</ButtonText>
           <ToolTipText>Activates pinned tab 6.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab6</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab6</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab6</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab6</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -140,8 +140,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 7</ButtonText>
           <ToolTipText>Activates pinned tab 7.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab7</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab7</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab7</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab7</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -153,8 +153,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 8</ButtonText>
           <ToolTipText>Activates pinned tab 8.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab8</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab8</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab8</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab8</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -166,8 +166,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 9</ButtonText>
           <ToolTipText>Activates pinned tab 9.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab9</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab9</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab9</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab9</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -180,8 +180,8 @@
         <Strings>
           <ButtonText>Go to Pinned Tab 10</ButtonText>
           <ToolTipText>Activates pinned tab 10.</ToolTipText>
-          <CanonicalName>Window.GoToPinnedTab10</CanonicalName>
-          <LocCanonicalName>Window.GoToPinnedTab10</LocCanonicalName>
+          <CanonicalName>.Window.GoToPinnedTab10</CanonicalName>
+          <LocCanonicalName>.Window.GoToPinnedTab10</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -194,8 +194,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 1</ButtonText>
           <ToolTipText>Activates unpinned tab 1.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab1</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab1</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab1</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab1</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -207,8 +207,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 2</ButtonText>
           <ToolTipText>Activates unpinned tab 2.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab2</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab2</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab2</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab2</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -220,8 +220,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 3</ButtonText>
           <ToolTipText>Activates unpinned tab 3.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab3</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab3</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab3</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab3</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -233,8 +233,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 4</ButtonText>
           <ToolTipText>Activates unpinned tab 4.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab4</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab4</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab4</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab4</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -246,8 +246,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 5</ButtonText>
           <ToolTipText>Activates unpinned tab 5.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab5</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab5</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab5</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab5</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -259,8 +259,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 6</ButtonText>
           <ToolTipText>Activates unpinned tab 6.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab6</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab6</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab6</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab6</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -272,8 +272,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 7</ButtonText>
           <ToolTipText>Activates unpinned tab 7.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab7</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab7</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab7</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab7</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -285,8 +285,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 8</ButtonText>
           <ToolTipText>Activates unpinned tab 8.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab8</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab8</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab8</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab8</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -298,8 +298,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 9</ButtonText>
           <ToolTipText>Activates unpinned tab 9.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab9</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab9</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab9</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab9</LocCanonicalName>
         </Strings>
       </Button>
 
@@ -311,8 +311,8 @@
         <Strings>
           <ButtonText>Go to Unpinned Tab 10</ButtonText>
           <ToolTipText>Activates unpinned tab 10.</ToolTipText>
-          <CanonicalName>Window.GoToUnpinnedTab10</CanonicalName>
-          <LocCanonicalName>Window.GoToUnpinnedTab10</LocCanonicalName>
+          <CanonicalName>.Window.GoToUnpinnedTab10</CanonicalName>
+          <LocCanonicalName>.Window.GoToUnpinnedTab10</LocCanonicalName>
         </Strings>
       </Button>
 
