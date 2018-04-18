@@ -211,7 +211,10 @@
     <Content Include="Resources\HotTabs_32x.svg" />
     <Content Include="Resources\HotTabs_90x.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\HotTabs_Icon_128x.png">
       <IncludeInVSIX>true</IncludeInVSIX>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
